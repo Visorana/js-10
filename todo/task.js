@@ -15,7 +15,7 @@ tasksAdd.addEventListener('click', (e) => {
 });
 
 function addNewTask() {
-    if (taskInput.value.length < 0) return
+    if (taskInput.value.trim().length <= 0) return
     let taskWrap = document.createElement('div');
     let task = document.createElement('div');
     let remove = document.createElement('a');
